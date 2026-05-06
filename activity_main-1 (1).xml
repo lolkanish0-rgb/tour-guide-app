@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml  — Welcome / Home Screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A237E"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <!-- Quiz Trophy Icon -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏆"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EduQuiz"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mixed Subjects Challenge"
+        android:textSize="16sp"
+        android:textColor="#90CAF9"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Info Boxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp">
+
+        <!-- Questions -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#283593"
+            android:padding="14dp"
+            android:layout_marginEnd="8dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFD740" />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Questions"
+                android:textSize="12sp"
+                android:textColor="#90CAF9" />
+        </LinearLayout>
+
+        <!-- Subjects -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#283593"
+            android:padding="14dp"
+            android:layout_marginEnd="8dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFD740" />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subjects"
+                android:textSize="12sp"
+                android:textColor="#90CAF9" />
+        </LinearLayout>
+
+        <!-- Timer -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#283593"
+            android:padding="14dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15s"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFD740" />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per Q"
+                android:textSize="12sp"
+                android:textColor="#90CAF9" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStartQuiz"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="START QUIZ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:backgroundTint="#FFD740"
+        android:layout_marginBottom="16dp" />
+
+    <!-- High Score -->
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Score: 0 / 10"
+        android:textSize="14sp"
+        android:textColor="#90CAF9" />
+
+</LinearLayout>
